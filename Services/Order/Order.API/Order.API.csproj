@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\BuildingBlocks\Middleware\Middleware.csproj" />
+    <ProjectReference Include="..\..\..\MigrationUpdate\MigrationUpdate.csproj" />
+    <ProjectReference Include="..\Order.Data\Order.Data.csproj" />
   </ItemGroup>
 
 </Project>

@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Middleware", "BuildingBlock
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegisterDependency", "BuildingBlocks\RegisterDependency\RegisterDependency.csproj", "{A3EB5EA6-214F-6426-0717-C4BC270ED8C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigrationUpdate", "MigrationUpdate\MigrationUpdate.csproj", "{D57FFEF3-8E7C-445F-9E79-341467FB94E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{A3EB5EA6-214F-6426-0717-C4BC270ED8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3EB5EA6-214F-6426-0717-C4BC270ED8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3EB5EA6-214F-6426-0717-C4BC270ED8C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D57FFEF3-8E7C-445F-9E79-341467FB94E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D57FFEF3-8E7C-445F-9E79-341467FB94E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D57FFEF3-8E7C-445F-9E79-341467FB94E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D57FFEF3-8E7C-445F-9E79-341467FB94E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -127,6 +133,7 @@ Global
 		{447BB564-7E5A-067F-FECE-5766490358CF} = {7828EBA9-CA79-4FAB-A5EA-BAFCAD624629}
 		{6C3FAFD4-8345-C0A5-D9CF-7B107BE18673} = {E6359702-9861-468B-879A-DCA5F5C36B2C}
 		{A3EB5EA6-214F-6426-0717-C4BC270ED8C7} = {E6359702-9861-468B-879A-DCA5F5C36B2C}
+		{D57FFEF3-8E7C-445F-9E79-341467FB94E7} = {E6359702-9861-468B-879A-DCA5F5C36B2C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B3DB7B46-5063-4542-8164-1E0AED62C691}

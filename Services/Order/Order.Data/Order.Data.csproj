@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\RegisterDependency\RegisterDependency.csproj" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.21" />
   </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\RegisterDependency\RegisterDependency.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="AutoMapper\" />
+    <Folder Include="Configuration\" />
+  </ItemGroup>
+
+  
 
 </Project>

@@ -1,10 +1,9 @@
 ﻿using RegisterDependency;
 
-namespace Order.Data
+namespace Order.Data.IServices
 {
     [RegisterScoped]
-    public class Class1
+    public class IOrderService
     {
-
     }
 }
