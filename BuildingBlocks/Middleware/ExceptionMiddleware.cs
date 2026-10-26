@@ -1,10 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Middleware.CustomExceptions;
 using Middleware.Models;
-using Newtonsoft.Json;
-using System.Data;
 using System.Net;
 
 namespace Middleware

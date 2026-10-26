@@ -30,7 +30,7 @@ namespace MigrationUpdate
                 // it will be usefull when your migraiton will be longer
 
 
-                context.Database.SetCommandTimeout(1000);
+                object value = context.Database.SetCommandTimeout(1000);
 
 
                 // applies or implements all the pending migration that is not updated inside 
