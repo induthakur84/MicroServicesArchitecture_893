@@ -12,6 +12,10 @@ namespace Order.Data.Configuration
                 .WithMany(p=>p.Orders)
                 .HasForeignKey(o=>o.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+           // userid  1  i
+           
+                
         }
     }
 }

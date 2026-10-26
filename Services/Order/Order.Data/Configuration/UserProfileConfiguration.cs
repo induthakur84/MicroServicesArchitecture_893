@@ -13,6 +13,16 @@ namespace Order.Data.Configuration
                 .WithOne(p => p.UserProfile)
                 .HasForeignKey<UserProfile>(p => p.UserId)
                 .OnDelete(DeleteBehavior.Cascade);
+
+
+            // userid =1
+
+            //userid=1
+
+            //.include
+
+            //.theninclude
+
         }
     }
 }

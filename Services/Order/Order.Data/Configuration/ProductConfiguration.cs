@@ -12,6 +12,14 @@ namespace Order.Data.Configuration
             builder.HasMany(p => p.Categories)
                  .WithMany( p => p.Products)
                  .UsingEntity(j => j.ToTable("ProductCategories"));
+
+            //ProductCategories
+
+            //id   ProductID CategoriesID
+            //     1      
+            //1
+
+            //2
         }
     }
 }
