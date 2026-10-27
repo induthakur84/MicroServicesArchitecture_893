@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -17,20 +17,14 @@ namespace MigrationUpdate
 
             Task.Run (() =>
             {
-                //
-                using var serviceScope = app.ApplicationServices.
-                GetService<IServiceScopeFactory>().CreateScope();
+                using var serviceScope = app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope();
                 // get the dbcontext object with dependency injection
 
+                using var context = serviceScope.ServiceProvider.GetRequiredService<TContext>();
 
-                using var  context = serviceScope.ServiceProvider.GetRequiredService<TContext>();
-
-
-                // set the maximum time(in second) allowed a database to run commanit
-                // it will be usefull when your migraiton will be longer
-
-
-                object value = context.Database.SetCommandTimeout(1000);
+                // set the maximum time(in second) allowed a database to run command
+                // it will be useful when your migration will be longer
+                context.Database.SetCommandTimeout(1000);
 
 
                 // applies or implements all the pending migration that is not updated inside 

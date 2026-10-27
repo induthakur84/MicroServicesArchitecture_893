@@ -11,7 +11,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<OrderDbContext>(options =>
 options.UseSqlServer(builder.Configuration.GetConnectionString("DbContext")));
 // Add services to the container.
-builder.Services.RegisterServices(typeof(OrderService).Assembly.FullName);
+builder.Services.RegisterServices(typeof(OrderService).Assembly.FullName!);
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

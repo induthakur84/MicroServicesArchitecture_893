@@ -1,10 +1,10 @@
-﻿namespace Order.DTO.Request
+namespace Order.DTO.Request
 {
     public class UserRequestDto
     {
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string Email { get; set; }
-        public string Description { get; set; }
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
     }
 }

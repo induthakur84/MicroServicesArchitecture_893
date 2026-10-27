@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using Middleware.CustomExceptions;
 using Middleware.Models;
+using Newtonsoft.Json;
 using System.Net;
 
 namespace Middleware
@@ -134,32 +136,18 @@ namespace Middleware
                 //case
 
                 default:
-
-
                     _logger.LogError(exception, " an unexpected error occurer {Message}", exception.Message);
 
-
-
                     statusCode = HttpStatusCode.InternalServerError;
-
                     message = " an unexpected error occred please try agina later";
-
                     break;
-
-
-
-                    //Createn a standard error response object
-
-                    var errorResponse = new ErrorResponse(message, details);
-
-                    // we can pass the status code and error response to buildrequest();
-
-
-                    // this method will the write final json reponse to the client.
-
-                    await BuildResponse(context, statusCode, errorResponse);
             }
 
+            // Create a standard error response object
+            var errorResponse = new ErrorResponse(message, details);
+
+            // this method will write final json response to the client.
+            await BuildResponse(context, statusCode, errorResponse);
         }
 
 

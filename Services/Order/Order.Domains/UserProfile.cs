@@ -1,9 +1,9 @@
-﻿namespace Order.Domains
+namespace Order.Domains
 {
     public class UserProfile
     {
         public int Id { get; set; }
-        public string Address { get; set; }
+        public string Address { get; set; } = string.Empty;
 
 
         //Foreign key
@@ -13,6 +13,6 @@
 
         //Navigation properly
 
-        public User User { get; set; }  
+        public User? User { get; set; }  
     }
 }
