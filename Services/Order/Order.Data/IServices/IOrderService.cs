@@ -1,9 +1,9 @@
-﻿using RegisterDependency;
+using RegisterDependency;
 
 namespace Order.Data.IServices
 {
     [RegisterScoped]
-    public class IOrderService
+    public interface IOrderService
     {
     }
 }

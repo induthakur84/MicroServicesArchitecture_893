@@ -17,11 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\CommonCode\Middleware\Middleware.csproj" />
     <ProjectReference Include="..\..\..\CommonCode\RegisterDependency\RegisterDependency.csproj" />
     <ProjectReference Include="..\Order.Domains\Order.Domains.csproj" />
     <ProjectReference Include="..\Order.DTO\Order.DTO.csproj" />
   </ItemGroup>
-
-  
 
 </Project>
