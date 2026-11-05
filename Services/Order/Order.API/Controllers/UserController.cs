@@ -19,9 +19,18 @@ namespace Order.API.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserResponseDto>>> GetAll()
         {
+            //4 use
+            //getall()
+            //
             var users = await _userService.GetAllUsersAsync();
+
+            //200
             return Ok(users);
         }
+
+        // database (list 2)
+
+        // no records dataBAE
 
         [HttpGet("{id:int}")]
         public async Task<ActionResult<UserResponseDto>> GetById(int id)
